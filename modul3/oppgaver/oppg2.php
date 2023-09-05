@@ -11,13 +11,18 @@
     <h1>Tallteller</h1>
 
     <?php 
-        $sum = 0+1+2+3+4+5+6+7+8+9;
+        $sum = 0;
 
-        echo "<p>Ferdig å telle! Summen av tallene ble $sum</p>";
-
-        for($i=0; $i<9; $i++) {
-            echo "<p></p>";
+        for($i=0; $i<10; $i++) {
+            echo "$i <br>";
+            ob_flush();
+            flush();
+            sleep(1);
+            $sum += $i;
         }
+
+        sleep(2);
+        echo "Summen av disse tallene er: $sum"
     ?>
 </body>
 </html>
