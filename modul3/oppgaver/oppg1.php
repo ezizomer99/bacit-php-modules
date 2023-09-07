@@ -21,7 +21,8 @@
         //check if date has expired
         $expireDate = $_GET["date"];
         $checkDate = date("Y-m-d");
-        //if date has expired, print "Datoen har utløpt", else print "Datoen har ikke utløpt"
+        //if date has expired, print "Datoen har utløpt", 
+        //else print "Datoen har ikke utløpt"
         if ($checkDate > $expireDate) {
             echo "<p>Datoen har utløpt</p>";
         } else {

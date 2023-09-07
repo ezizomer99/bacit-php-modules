@@ -8,6 +8,7 @@
 <body>
     <h1>Sjakkbrett og hvete</h1>
 
+    <button onclick="history.back()">Tilbake</button> <br>
     <table border="1">
         <tr>
             <th>Antall ruter</th>
@@ -20,8 +21,8 @@
 
             for($rute = 1; $rute <= 64; $rute++) {
                 echo "<tr>";
-                echo "<td>Rute $rute</td>";
-                echo "<td>$kornPåRute korn</td>";
+                    echo "<td>Rute $rute</td>";
+                    echo "<td>$kornPåRute korn</td>";
                 echo "</tr>";
 
                 $totalKorn += $kornPåRute;
