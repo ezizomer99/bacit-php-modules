@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oppgave 1</title>
+    <title>Oppgave 4</title>
 </head>
 <body>
     <a href="../index.php">Tilbake</a>
@@ -23,6 +23,7 @@
                 INNER JOIN tutors ON timeslots.tutor_id = tutors.tutor_id
                 INNER JOIN users ON tutors.user = users.user_id
                 ORDER BY ts_date";
+
         $query = $pdo->prepare($sql);
 
         try {
@@ -59,11 +60,9 @@
                     </tr>";
             }
         } else {
-            echo "<tr>
-                    <td colspan='5'>Ingen timeslots funnet.</td>
-                </tr>";
+            echo "<tr><td>Ingen timeslots funnet</td></tr>";
         }
-        echo "</table>";
     ?>
+    
 </body>
 </html>
