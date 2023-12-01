@@ -6,6 +6,7 @@
     <title>Modul 9</title>
 </head>
 <body>
+<a href="../index.php">Tilbake</a>
 <h1>Modul 9</h1>
 <button onclick="history.back()">Tilbake</button>
 <p><a href="oppgaver/oppg1.php">Oppgave 1</a></p>
